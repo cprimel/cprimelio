@@ -1,42 +1,40 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react'
+import { Link } from 'gatsby'
+import NavPrimary from './NavPrimary'
+import profile_image from '../images/profile.jpg'
+import NavSocial from './NavSocial'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = ({ location }) => {
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
+    return (
+      <header className="panel-cover">
+          <div className={(location === '/' ? "panel-main" : "panel-main__collapsed")
+          }>
+            <div className="panel-main__inner panel-inverted">
+              <div className="panel-main__content">
+                <Link to="/">
+                  <img
+                    src={profile_image}
+                    className="user-image"
+                    alt={'Casey Primel'}
+                  />
+                  <h1 className="panel-cover__title panel-title">
+                    Casey Primel
+                  </h1>
+                </Link>
+                <hr className="panel-cover__divider" />
+                <p className="panel-cover__description">Fullstack developer</p>
+                <hr className="panel-cover__divider panel-cover__divider--secondary" />
+                <div className="navigation-wrapper.visible">
+                  <NavPrimary />
+                  <NavSocial />
+                </div>
+              </div>
+            </div>
+            <div className="panel-cover--overlay" />
+          </div>
+      </header>
+    )
+  }
 
 export default Header
