@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+// Font variables
+$roboto: 'Roboto', sans-serif;
+$primary-color: #fff;
+
+// Styles
+body {
+  color: $primary-color;
+  font-family: $roboto;
+  font-weight: 400;
+}

@@ -1,4 +1,4 @@
-.icon:before {
+.icon::before {
   font-family: 'foundation-icons';
   font-size: 2.0rem;
   font-style: normal;
@@ -11,14 +11,14 @@
   text-decoration: inherit;
 }
 
-.icon-mail:before {
+.icon-mail::before {
   content: '\f16d';
 }
 
-.icon-social-github:before {
+.icon-social-github::before {
   content: '\f1c9';
 }
 
-.icon-social-linkedin:before {
+.icon-social-linkedin::before {
   content: '\f1d0';
 }
