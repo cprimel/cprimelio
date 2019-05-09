@@ -7,31 +7,31 @@ import NavSocial from './NavSocial'
 const Header = ({ location }) => {
 
     return (
-      <header className="panel-cover">
-          <div className={(location === '/' ? "panel-main" : "panel-main__collapsed")
+      <header className="panel__cover">
+          <div className={(location === '/' ? "panel" : "panel--collapsed")
           }>
-            <div className="panel-main__inner panel-inverted">
-              <div className="panel-main__content">
+            <div className="panel__inner">
+              <div className="panel__content">
                 <Link to="/">
                   <img
                     src={profile_image}
                     className="user-image"
                     alt={'Casey Primel'}
                   />
-                  <h1 className="panel-cover__title panel-title">
+                  <h1 className="panel__title">
                     Casey Primel
                   </h1>
                 </Link>
-                <hr className="panel-cover__divider" />
-                <p className="panel-cover__description">Fullstack developer</p>
-                <hr className="panel-cover__divider panel-cover__divider--secondary" />
-                <div className="navigation-wrapper.visible">
+                <hr className="panel__divider" />
+                <p className="panel__description">Fullstack Developer</p>
+                <hr className="panel__divider--secondary" />
+                <div className="nav__wrapper">
                   <NavPrimary />
                   <NavSocial />
                 </div>
               </div>
             </div>
-            <div className="panel-cover--overlay" />
+            <div className="panel__overlay" />
           </div>
       </header>
     )
