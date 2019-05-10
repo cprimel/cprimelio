@@ -21,7 +21,7 @@ body {
 // Icons
 .icon::before {
   font-family: 'foundation-icons';
-  font-size: 2.0rem;
+  font-size: 3.0rem;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -33,13 +33,16 @@ body {
 }
 
 .icon-mail::before {
+  color: white;
   content: '\f16d';
 }
 
 .icon-social-github::before {
   content: '\f1c9';
+  color: white;
 }
 
 .icon-social-linkedin::before {
   content: '\f1d0';
+  color: $linkedin-blue;
 }

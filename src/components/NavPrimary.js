@@ -13,16 +13,15 @@ class NavPrimary extends Component {
   render() {
     return (
       <div>
-        <nav className="cover-navigation cover-navigation--primary">
-          <ul className="navigation">
+        <nav className="navigation">
+          <ul className="navigation__list">
             <li className="navigation__item">
               <Link
                 onClick={this.handlePortfolioClick}
-                to="/portfolio"
-                title="link to portfolio page"
-                className="portfolio-button"
+                to="/latest"
+                title="link to latest"
               >
-                Portfolio
+                Latest
               </Link>
             </li>
             <li className="navigation__item">
@@ -30,7 +29,6 @@ class NavPrimary extends Component {
                 onClick={this.handlePortfolioClick}
                 to="/portfolio"
                 title="link to portfolio page"
-                className="portfolio-button"
               >
                 Portfolio
               </Link>
@@ -40,7 +38,6 @@ class NavPrimary extends Component {
                 onClick={this.handleAboutClick}
                 to="/about"
                 title="link to about page"
-                className="about-button"
               >
                 About
               </Link>
