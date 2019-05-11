@@ -1,23 +1,17 @@
 /* eslint-disable no-console */
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 
-class NavPrimary extends Component {
-  handlePortfolioClick(){
-    console.log('Portfolio please!')
-  }
-  handleAboutClick(){
-    console.log('About please!')
-  }
+const NavPrimary = ({ location }) => {
 
-  render() {
+  const isCollapsed = location !== '/'
+
     return (
       <div>
-        <nav className="navigation">
-          <ul className="navigation__list">
+        <nav className={"navigation"}>
+          <ul className={(isCollapsed ? 'navigation__list--collapsed' : 'navigation__list')}>
             <li className="navigation__item">
               <Link
-                onClick={this.handlePortfolioClick}
                 to="/latest"
                 title="link to latest"
               >
@@ -26,7 +20,6 @@ class NavPrimary extends Component {
             </li>
             <li className="navigation__item">
               <Link
-                onClick={this.handlePortfolioClick}
                 to="/portfolio"
                 title="link to portfolio page"
               >
@@ -35,7 +28,6 @@ class NavPrimary extends Component {
             </li>
             <li className="navigation__item">
               <Link
-                onClick={this.handleAboutClick}
                 to="/about"
                 title="link to about page"
               >
@@ -47,6 +39,5 @@ class NavPrimary extends Component {
       </div>
     )
   }
-}
 
 export default NavPrimary

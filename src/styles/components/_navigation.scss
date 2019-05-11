@@ -8,6 +8,13 @@
     flex-direction: row;
     justify-content: center;
     margin: 0;
+
+    &--collapsed {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100%;
+    }
   }
 
   &__item {
@@ -22,21 +29,21 @@
       flex-direction: row;
       justify-content: center;
 
-      a i{
+      a i {
         border: none;
-        margin: .5rem 1rem;
+        margin: 0.5rem 1rem;
         text-shadow: none;
       }
     }
 
     a {
-      border: .2rem solid $light-grey;
+      border: 0.2rem solid $light-grey;
       border-radius: 2rem;
       color: $light-grey;
       font-size: 1rem;
       font-weight: bold;
-      letter-spacing: .1rem;
-      margin: .5rem .5rem;
+      letter-spacing: 0.1rem;
+      margin: 0.5rem 0.5rem;
       padding: 1rem 2rem;
       text-shadow: none;
       white-space: nowrap;

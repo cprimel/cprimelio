@@ -2,11 +2,14 @@
   display: table;
   width: 100%;
   height: 100%;
+  transition: width 2s;
 
+  
   &--collapsed {
     display: table;
     width: 25rem;
     height: 100%;
+    animation: panelSlideOut 1s;
   }
 
   &__inner {
@@ -37,6 +40,7 @@
     max-width: none;
     background: url('../images/cover.jpg') top left no-repeat #666666;
     background-size: cover;
+
   }
   &__title {
     margin: 0 0 0.5rem 0;
@@ -73,11 +77,6 @@
     bottom: 0;
     left: 0;
     background-color: rgba($medium-grey, 0.6);
-    // background-image: -webkit-linear-gradient(
-    //   -410deg,
-    //   rgba($medium-grey, 0.6) 20%,
-    //   rgba(0, 0, 0, 0.9)
-    // );
     background-image: linear-gradient(
       140deg,
       rgba($medium-grey, 0.6) 20%,

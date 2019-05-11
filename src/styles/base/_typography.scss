@@ -32,6 +32,26 @@ body {
   text-decoration: inherit;
 }
 
+.icon-list::before {
+  color: white;
+  content: '\f169';
+}
+
+.icon-home::before {
+  color: white;
+  content: '\f15a';
+}
+
+.icon-torso::before {
+  color: white;
+  content: '\f1fe';
+}
+
+.icon-folder::before {
+  color: white;
+  content: '\f150';
+}
+
 .icon-mail::before {
   color: white;
   content: '\f16d';
