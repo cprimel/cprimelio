@@ -1,0 +1,16 @@
+.section-about {
+  display: flex;
+  flex-direction: row;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 10rem;
+    width: 50%;
+    height: 100%
+  }
+
+  &__text-container > * {
+    padding: 1rem 0;
+  }
+}

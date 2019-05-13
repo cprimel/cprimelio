@@ -5,8 +5,7 @@ import Sidebar from '../components/SideBar';
 const IndexPage = () => {
   return (
       <>
-      <Header location={location.pathname}/>
-      <Sidebar />
+      <Header />
       </>
   )
 }

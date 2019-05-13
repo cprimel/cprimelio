@@ -4,12 +4,11 @@ import NavPrimary from './NavPrimary'
 import profile_image from '../images/profile.jpg'
 import NavSocial from './NavSocial'
 
-const Header = ({ location }) => {
-  const isCollapsed = location !== '/'
+const Header = () => {
 
   return (
       <header className="panel__cover">
-        <div className={isCollapsed ? 'panel--collapsed' : 'panel'}>
+        <div className="panel">
           <div className="panel__inner">
             <div className="panel__content">
               <Link to="/">
@@ -24,7 +23,7 @@ const Header = ({ location }) => {
               <p className="panel__description">Fullstack Developer</p>
               <hr className="panel__divider--secondary" />
               <div className="nav__wrapper">
-                <NavPrimary location={location} />
+                <NavPrimary />
                 <NavSocial />
               </div>
             </div>

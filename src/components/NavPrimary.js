@@ -2,14 +2,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const NavPrimary = ({ location }) => {
-
-  const isCollapsed = location !== '/'
+const NavPrimary = () => {
 
     return (
       <div>
         <nav className={"navigation"}>
-          <ul className={(isCollapsed ? 'navigation__list--collapsed' : 'navigation__list')}>
+          <ul className="navigation__list">
             <li className="navigation__item">
               <Link
                 to="/latest"

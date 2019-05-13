@@ -18,20 +18,32 @@ const Sidebar = () => {
           </li>
           <li className="menu-sidebar__item--primary">
             <Link to="/about" title="link to about page">
-              <i className="icon icon-torso" />
-              <span className="menu-sidebar__text">About</span>
+              <div className="container">
+                <i className="icon icon--sidebar icon-torso" />
+                <div className="overlay">
+                  <span className="container__text">About</span>
+                </div>
+              </div>
             </Link>
           </li>
           <li className="menu-sidebar__item--primary">
             <Link to="/portfolio" title="link to portfolio page">
-              <i className="icon icon-folder" />
-              <span className="menu-sidebar__text">Portfolio</span>
+              <div className="container">
+                <i className="icon icon--sidebar icon-folder" />
+                <div className="overlay">
+                  <span className="container__text">Portfolio</span>
+                </div>
+              </div>
             </Link>
           </li>
           <li className="menu-sidebar__item--primary">
             <Link to="/contact" title="link to contact page">
-              <i className="icon icon-mail" />
-              <span className="menu-sidebar__text">Contact</span>
+              <div className="container">
+                <i className="icon icon--sidebar icon-mail" />
+                <div className="overlay">
+                  <span className="container__text">Contact</span>
+                </div>
+              </div>
             </Link>
           </li>
         </ul>

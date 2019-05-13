@@ -10,6 +10,7 @@
   &__list {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100vh;
@@ -17,20 +18,19 @@
 
   &__item--primary {
     opacity: 1;
-    display: block;
-    width: 100%;
+    display: flex;
+    width: 50%;
     height: auto;
-    transition: 0.2s ease;
     backface-visibility: hidden;
-    margin: 3rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem 1.25rem;
   }
 }
 
 .container {
   position: relative;
   width: 50%;
-
-
 
   &:hover .overlay {
     opacity: 1;
@@ -43,6 +43,8 @@
   &__text {
     color: white;
     background-color: $dark-grey;
+    text-align: justify;
+    padding-left: 1rem;
   }
 }
 
@@ -54,13 +56,11 @@
   background-color: $dark-grey;
   opacity: 0;
   transition: 0.2s ease;
-  text-align :center;
 }
 
 .icon--sidebar {
   opacity: 1;
   display: block;
-  width: 100%;
   height: auto;
   transition: 0.2s ease;
   backface-visibility: hidden;

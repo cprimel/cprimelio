@@ -13,10 +13,24 @@
 
 // Base font styling
 body {
-  color: $primary-color;
+  color: $black;
   font-family: $roboto;
   font-weight: 400;
 }
+
+// Headings, etc.
+.heading-primary {
+  font-size: 5rem;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+}
+
+.heading-tertiary {
+  font-size: 1.25rem;
+}
+
 
 // Icons
 .icon::before {
