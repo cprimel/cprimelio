@@ -1,0 +1,65 @@
+.project-board {
+  &__container {
+    color: $black;
+    position: absolute;
+    top: 10vh;
+    left: 5rem;
+    height: 90vh;
+    width: 100%;
+  }
+
+  &__body {
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    height: 90vh;
+  }
+}
+
+.project-card {
+  height: 40vh;
+  width: calc(25% - 10rem);
+  border-radius: 3px;
+  position: relative;
+
+
+  &__placard {
+    position: absolute;
+    top: 35%;
+    left: 14%;
+    background: $primary-color;
+    width: 18rem;
+    height: 8rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    color: $black;
+    padding: 1rem 0rem;
+  }
+
+  &__front {
+    height: 55vh;
+    transition: all .8s ease;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+    perspective: 150rem;
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-medium
+        ),
+        url('../images/project1-sample.jpg');
+      background-size: cover;
+      background-blend-mode: multiply;
+      height: 100%;
+    }
+
+    &:hover {
+      transform: rotateY(-180deg);
+    }
+  
+  }
+}

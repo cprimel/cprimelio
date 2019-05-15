@@ -10,7 +10,7 @@ const NavPrimary = () => {
           <ul className="navigation__list">
             <li className="navigation__item">
               <Link
-                to="/latest"
+                to="/latestupdates"
                 title="link to latest"
               >
                 Latest

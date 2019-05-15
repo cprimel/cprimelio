@@ -1,8 +1,13 @@
 import React from 'react'
+import Sidebar from '../components/Sidebar'
+import ProjectBoard from '../components/ProjectBoard';
 
 const PortfolioPage = () => {
   return (
-      <p>This is {location.pathname}</p>
+      <>
+      <Sidebar />
+      <ProjectBoard />
+      </>
   )
 }
 
