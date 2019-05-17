@@ -51,6 +51,11 @@ body {
   content: '\f169';
 }
 
+.icon-list-thumbnail::before {
+  color: white;
+  content: '\f168';
+}
+
 .icon-home::before {
   color: white;
   content: '\f15a';

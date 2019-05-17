@@ -1,0 +1,61 @@
+.card {
+  // Functionality
+  height: 25rem;
+  width: 25rem;
+  perspective: 150rem;
+
+  &__placard {
+    position: absolute;
+    top: 35%;
+    left: 14%;
+    background: $primary-color;
+    width: 18rem;
+    height: 8rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    color: $black;
+    padding: 1rem 0rem;
+  }
+
+  &__image {
+    mix-blend-mode: multiply;
+  }
+
+  &__side {
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+    overflow: hidden;
+
+    &--front {
+      background-image: linear-gradient(
+        to right bottom,
+        $color-tertiary-light,
+        $color-tertiary-medium
+      );
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      color: $black;
+    }
+  }
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+}

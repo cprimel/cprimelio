@@ -11,6 +11,7 @@ const project = {
     'keras'
   ],
   description: 'An analysis of LAX traffic using pandas and keras',
+  imgName: 'project1-sample.jpg'
 }
 
 const ProjectBoard = () => {

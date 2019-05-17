@@ -1,13 +1,12 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Header from '../components/Header'
-import Sidebar from '../components/SideBar';
 
-const IndexPage = () => {
-  return (
+const LandingPage = () => (
       <>
+      <Helmet title="cprimel.io | Home" />
       <Header />
       </>
   )
-}
 
-export default IndexPage
+export default LandingPage

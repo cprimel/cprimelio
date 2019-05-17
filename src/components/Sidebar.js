@@ -27,6 +27,16 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="menu-sidebar__item--primary">
+            <Link to="/latestupdates" title="link to latest page">
+              <div className="container">
+                <i className="icon icon--sidebar icon-list-thumbnail" />
+                <div className="overlay">
+                  <span className="container__text">Latest</span>
+                </div>
+              </div>
+            </Link>
+          </li>
+          <li className="menu-sidebar__item--primary">
             <Link to="/portfolio" title="link to portfolio page">
               <div className="container">
                 <i className="icon icon--sidebar icon-folder" />
