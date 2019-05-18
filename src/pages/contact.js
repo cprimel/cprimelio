@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Sidebar from '../components/Sidebar';
 
-const ContactPge = () => {
+const ContactPage = () => {
   return (
     <>
     <Helmet title="cprimel.io | Contact" />
