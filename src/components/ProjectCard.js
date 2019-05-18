@@ -1,8 +1,8 @@
 import React from 'react'
 import CardImage from './CardImage'
 
-const ProjectCard = ({ title, tags, description, imgName }) => {
-  
+const ProjectCard = ({ project }) => {
+  const { title, tags, description, imgName } = project.node.frontmatter
   return (
     <div className="card">
       <div className="card__side card__side--front">
