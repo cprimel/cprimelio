@@ -8,8 +8,8 @@ const ContactPage = () => {
       <Helmet title="cprimel.io | Contact" />
       <Sidebar />
       <div>
-        <h1>Latest Updates</h1>
-        <p>posts will appear here</p>
+        <h1>Contact Page</h1>
+        <p>info will appear here</p>
       </div>
     </>
   )

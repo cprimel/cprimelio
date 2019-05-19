@@ -2,15 +2,14 @@
   &__container {
     color: $black;
     position: absolute;
-    top: 10vh;
+    top: 5rem;
     left: 5rem;
-    height: 90vh;
+    height: 90%;
     width: 100%;
   }
 
   &__body {
     margin: 0 auto;
     padding: 2rem 2rem;
-    height: 90vh;
   }
 }

@@ -1,12 +1,17 @@
 ---
 id: '1'
-path: "/first"
+path: "/cprimelio-gatsby"
 date: '2019-05-15T17:12:33.962Z'
 type: "project"
-title: "Sample Project"
-tags: ['JavaScript', 'NodeJS']
+title: "cprimel.io"
+tags: [
+  'JavaScript',
+  'React',
+  'GraphQL',
+  'GatsbyJS'
+  ]
 imgName: 'project1-sample.jpg'
-description: 'This is project 1'
+description: 'Portfolio website built with GatsbyJs'
 ---
 
 Let's see if this works...
