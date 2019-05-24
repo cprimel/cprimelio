@@ -1,20 +1,24 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
+import Sidebar from '../components/Sidebar'
 
 const ProjectTemplate = ({ data }) => {
   const { markdownRemark: project } = data
   return (
-    <div className="project-container">
+    <>
       <Helmet title={`cprimel.io | ${project.frontmatter.title}`} />
       <div className="project">
-        <h1>{project.frontmatter.title}</h1>
-        <div
-          className="project-content"
-          dangerouslySetInnerHTML={{ __html: project.html }}
-        />
+        <Sidebar />
+        <div className="project__container">
+          <h1>{project.frontmatter.title}</h1>
+          <div
+            className="project__content"
+            dangerouslySetInnerHTML={{ __html: project.html }}
+          />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
