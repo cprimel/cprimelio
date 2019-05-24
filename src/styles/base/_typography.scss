@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:300,400,500&display=swap');
 @font-face {
   font-family: 'foundation-icons';
   src: url('../fonts/foundation-icons/foundation-icons.eot');
@@ -13,12 +13,20 @@
 
 // Base font styling
 body {
-  color: $black;
-  font-family: $roboto;
+  color: $color-black;
+  font-family: $font-opensans;
   font-weight: 400;
 }
 
 // Headings, etc.
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-ubuntu;
+}
+
 .heading-primary {
   font-size: 5rem;
 }
@@ -47,38 +55,38 @@ body {
 }
 
 .icon-list::before {
-  color: white;
+  color: $color-icon;
   content: '\f169';
 }
 
 .icon-list-thumbnail::before {
-  color: white;
+  color: $color-icon;
   content: '\f168';
 }
 
 .icon-home::before {
-  color: white;
+  color: $color-icon;
   content: '\f15a';
 }
 
 .icon-torso::before {
-  color: white;
+  color: $color-icon;
   content: '\f1fe';
 }
 
 .icon-folder::before {
-  color: white;
+  color: $color-icon;
   content: '\f150';
 }
 
 .icon-mail::before {
-  color: white;
+  color: $color-icon;
   content: '\f16d';
 }
 
 .icon-social-github::before {
   content: '\f1c9';
-  color: white;
+  color: $color-icon;
 }
 
 .icon-social-linkedin::before {

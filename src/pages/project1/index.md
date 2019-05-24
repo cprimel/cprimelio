@@ -11,7 +11,7 @@ tags: [
   'GatsbyJS'
   ]
 imgName: 'project1-sample.jpg'
-description: 'Portfolio website built with GatsbyJs'
+description: 'Portfolio website built with React and GatsbyJS'
 ---
 
 Let's see if this works...

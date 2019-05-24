@@ -20,9 +20,9 @@
     padding: 0 3.75rem;
     font-weight: 300;
     text-align: center;
-    color: $primary-color;
-    text-shadow: 0 0.1rem 0.1rem rgba($black, 0.4) a {
-      color: $primary-color;
+    color: $color-primary-1;
+    text-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.4) a {
+      color: $color-primary-1;
     }
   }
 
@@ -38,7 +38,7 @@
     height: 100%;
     width: 100%;
     max-width: none;
-    background: url('../images/cover.jpg') top left no-repeat #666666;
+    background: linear-gradient(170deg, $color-secondary-1 50%,  $color-primary-2 100%);
     background-size: cover;
 
   }
@@ -47,17 +47,17 @@
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
-    color: $primary-color;
+    color: $color-primary-1;
   }
 
   &__divider {
     width: 50%;
     margin: 2rem auto;
-    border-top: 0.1rem solid rgba($primary-color, 0.14);
+    border-top: 0.1rem solid rgba($color-secondary-2, 0.2);
 
     &--secondary {
       margin: 2rem auto;
-    border-top: 0.1rem solid rgba($primary-color, 0.14);
+    border-top: 0.1rem solid rgba($color-secondary-2, 0.2);
       width: 25%;
     }
   }
@@ -76,11 +76,5 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba($medium-grey, 0.6);
-    background-image: linear-gradient(
-      140deg,
-      rgba($medium-grey, 0.6) 20%,
-      rgba($black, 0.9)
-    );
   }
 }

@@ -1,6 +1,6 @@
 .project-board {
   &__container {
-    color: $black;
+    color: $color-black;
     position: absolute;
     top: 5rem;
     left: 5rem;
@@ -11,5 +11,7 @@
   &__body {
     margin: 0 auto;
     padding: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
   }
 }

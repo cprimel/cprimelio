@@ -1,6 +1,6 @@
 @mixin buttonHover {
   &:hover {
-    color: $hover-color;
-    border-color: $hover-color;
+    color: $color-hover;
+    border-color: $color-hover;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import Sidebar from '../components/Sidebar'
-import ProjectBoard from '../components/ProjectBoard';
+import ProjectBoard from '../components/ProjectBoard'
 
 // Sample data
 // const projects = [
@@ -37,11 +37,11 @@ const PortfolioPage = ({ data }) => {
   const { allMarkdownRemark: projects } = data
 
   return (
-      <>
+    <>
       <Helmet title="cprimel.io | Portfolio" />
       <Sidebar />
-      <ProjectBoard projects={ projects.edges }/>
-      </>
+      <ProjectBoard projects={projects.edges} />
+    </>
   )
 }
 
@@ -64,4 +64,4 @@ export const pageQuery = graphql`
       }
     }
   }
-  `
+`

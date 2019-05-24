@@ -1,12 +1,12 @@
 ---
 id: '2'
-path: "/second"
+path: "/transit-dashboard"
 date: '2019-05-15T17:12:33.962Z'
 type: "project"
-title: "Sample Project number 2"
-tags: ['Python']
+title: "Transit Systems Dashboard"
+tags: ['Python', 'SQL', 'django']
 imgName: 'project1-sample.jpg'
-description: 'This is project 2'
+description: 'Dashboard for viewing and analyzing mass transit systems'
 ---
 
 Let's see if this works too...

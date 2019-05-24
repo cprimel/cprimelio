@@ -5,6 +5,7 @@ module.exports = {
     author: `Casey Primel`,
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-catch-links',
@@ -19,9 +20,9 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-      name: `images`,
-      path: `${__dirname}/src/images`,
-    },
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -39,13 +40,14 @@ module.exports = {
           },
         ],
       },
-    }, {
+    },
+    {
       resolve: `gatsby-plugin-sharp`,
       options: {
         useMozJpeg: false,
         stripMetadata: true,
         defaultQuality: 75,
-      }
+      },
     },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality

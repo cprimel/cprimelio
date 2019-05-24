@@ -7,7 +7,12 @@ const Sidebar = () => {
       <nav className="menu-sidebar">
         <ul className="menu-sidebar__list">
           <li className="menu-sidebar__item--primary">
-            <Link to="/" title="link to home page">
+            <Link
+              className="sidebar__link"
+              to="/"
+              title="link to home page"
+              activeClassName="active"
+            >
               <div className="container">
                 <i className="icon icon--sidebar icon-home" />
                 <div className="overlay">
@@ -17,7 +22,12 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="menu-sidebar__item--primary">
-            <Link to="/about" title="link to about page">
+            <Link
+              className="sidebar__link"
+              to="/about"
+              title="link to about page"
+              activeClassName="active"
+            >
               <div className="container">
                 <i className="icon icon--sidebar icon-torso" />
                 <div className="overlay">
@@ -27,7 +37,13 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="menu-sidebar__item--primary">
-            <Link to="/latestupdates" title="link to latest page">
+            <Link
+              className="sidebar__link"
+              to="/latestupdates"
+              title="link to latest page"
+              activeClassName="active"
+              partiallyActive
+            >
               <div className="container">
                 <i className="icon icon--sidebar icon-list-thumbnail" />
                 <div className="overlay">
@@ -37,7 +53,13 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="menu-sidebar__item--primary">
-            <Link to="/portfolio" title="link to portfolio page">
+            <Link
+              className="sidebar__link"
+              to="/portfolio"
+              title="link to portfolio page"
+              activeClassName="active"
+              partiallyActive
+            >
               <div className="container">
                 <i className="icon icon--sidebar icon-folder" />
                 <div className="overlay">
@@ -47,7 +69,12 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="menu-sidebar__item--primary">
-            <Link to="/contact" title="link to contact page">
+            <Link
+              className="sidebar__link"
+              to="/contact"
+              title="link to contact page"
+              activeClassName="active"
+            >
               <div className="container">
                 <i className="icon icon--sidebar icon-mail" />
                 <div className="overlay">

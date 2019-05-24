@@ -1,18 +1,50 @@
 // Font variables
-$roboto: 'Roboto', sans-serif;
-$primary-color: #fff;
+$font-ubuntu: 'Ubuntu', sans-serif;
+$font-opensans: 'Open Sans', sans-serif;
 
-// Color
-$black: #000;
-$light-grey: #838b8b;
-$medium-grey: rgb(68,68,68);
-$dark-grey: rgb(40,40,40);
-$tertiary-color: blue;
-$hover-color: rgb(0, 255, 234);
+// Color variables
+$color-primary-1: #43e695;
+$color-primary-2: #0cb37e;
+$color-secondary-1:#274b74;
+$color-secondary-2: #86cdff;
 
-// Tertiary colors
-$color-tertiary-light: rgb(0, 255, 234);
-$color-tertiary-medium: rgb(0, 150, 137);
 
-// Third-party colors
+// $color-primary-1: #8ae3ff;
+// $color-primary-2: #457397;
+// $color-primary-3: #01042f;
+// $color-secondary-1: #c80074; // Used on hover.
+// $color-secondary-2: #ca7156;
+// $color-secondary-3: #b206f2;
+// $color-secondary-4: #00cbff;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-grey-light: #afafaf;
+$color-grey-medium: #4b4b4b;
+$color-grey-dark: #282828;
+
 $linkedin-blue: #0077B5;
+
+$color-icon: $color-grey-light;
+$color-icon-active: $color-primary-1;
+$color-hover: $color-primary-1;
+
+// // Font variables
+// $roboto: 'Roboto', sans-serif;
+// $primary-color: #fff;
+
+// // Color
+// $black: #000;
+// $light-grey: #838b8b;
+// $medium-grey: rgb(68,68,68);
+// $dark-grey: rgb(40,40,40);
+// $tertiary-color: blue;
+// $hover-color: rgb(0, 255, 234);
+
+// // Tertiary colors
+// $color-tertiary-light: rgb(0, 255, 234);
+// $color-tertiary-medium: rgb(0, 150, 137);
+
+// // Third-party colors
+// $linkedin-blue: #0077B5;
