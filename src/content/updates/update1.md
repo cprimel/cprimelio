@@ -1,6 +1,6 @@
 ---
 id: '3'
-path: "/loan-calc"
+path: "/big-update"
 date: '2019-05-15T17:12:33.962Z'
 type: "update"
 title: "Loan payment calculator"

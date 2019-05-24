@@ -8,9 +8,14 @@ const ProjectBoard = ({ projects }) => {
       <Filter />
       <div className="project-board__container">
         <div className="project-board__body">
-          {projects.map(project => (
+          {projects.map((project, active, toggle) => (
             <div className="card__container">
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard
+                key={project.id}
+                project={project}
+                active={active}
+                toggle={toggle}
+              />
             </div>
           ))}
         </div>

@@ -20,6 +20,24 @@
     padding: 1rem 0rem;
   }
 
+  &__tags {
+    padding: 0 .5rem;
+  }
+
+  &__tags-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__description {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
   &__image {
     mix-blend-mode: multiply;
   }

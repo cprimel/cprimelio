@@ -1,0 +1,15 @@
+.section-updates {
+  display: flex;
+  flex-direction: row;
+
+  &__container {
+    padding: 5rem 5rem;
+    width: 90%;
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
