@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="card">
       <div className="card__side card__side--front">
-      <CardImage imgName={imgName}/>
+        <CardImage imgName={imgName} />
         <div className="card__placard">
           <h4 className="card__title">{title}</h4>
         </div>

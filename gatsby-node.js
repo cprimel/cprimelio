@@ -1,7 +1,7 @@
-const path = require("path")
+const path = require('path')
 
 exports.createPages = ({ actions, graphql }) => {
-  const {createPage } = actions
+  const { createPage } = actions
 
   const projectTemplate = path.resolve(`src/templates/project.js`)
 
