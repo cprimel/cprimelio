@@ -39,7 +39,7 @@ const Sidebar = () => {
           <li className="menu-sidebar__item--primary">
             <Link
               className="sidebar__link"
-              to="/latestupdates"
+              to="/updates"
               title="link to latest page"
               activeClassName="active"
               partiallyActive
@@ -55,7 +55,7 @@ const Sidebar = () => {
           <li className="menu-sidebar__item--primary">
             <Link
               className="sidebar__link"
-              to="/portfolio"
+              to="/projects"
               title="link to portfolio page"
               activeClassName="active"
               partiallyActive

@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Sidebar from '../components/Sidebar'
 import ProjectBoard from '../components/ProjectBoard'
 
-const PortfolioPage = ({ data }) => {
+const ProjectsPage = ({ data }) => {
   const { allMarkdownRemark: projects } = data
 
   return (
@@ -16,7 +16,7 @@ const PortfolioPage = ({ data }) => {
   )
 }
 
-export default PortfolioPage
+export default ProjectsPage
 
 export const pageQuery = graphql`
   query AllProjects {

@@ -1,6 +1,6 @@
 ---
 id: '2'
-path: "/transit-dashboard"
+path: "/projects/transit-dashboard"
 date: '2019-05-15T17:12:33.962Z'
 type: "project"
 title: "Transit Systems Dashboard"

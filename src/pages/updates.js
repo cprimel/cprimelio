@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Sidebar from '../components/Sidebar'
 
-const LatestUpdates = ({ data }) => {
+const UpdatesPage = ({ data }) => {
   const { allMarkdownRemark: updates } = data
   return (
     <>
@@ -16,15 +16,21 @@ const LatestUpdates = ({ data }) => {
               .filter(update => update.node.frontmatter.title.length > 0)
               .map(({ node: update }) => {
                 return (
-                  <div className="updates__preview" key={update.id}>
-                    <h1>
+                  <div className="section-updates__preview" key={update.id}>
+                    <h2 className="section-updates__title heading-secondary">
                       <Link to={update.frontmatter.path}>
                         {update.frontmatter.title}
                       </Link>
-                    </h1>
-                    <h2>{update.frontmatter.date}</h2>
-                    <h4>{update.frontmatter.tags}</h4>
-                    <p>{update.excerpt}</p>
+                    </h2>
+                    <h3 className="section-updates__date heading-tertiary">
+                      {update.frontmatter.date}
+                    </h3>
+                    <p className="section-updates__excerpt text-content">
+                      {update.excerpt}
+                    </p>
+                    <Link className="link-text" to={update.frontmatter.path}>
+                      Further reading &rarr;
+                    </Link>
                   </div>
                 )
               })}
@@ -35,7 +41,7 @@ const LatestUpdates = ({ data }) => {
   )
 }
 
-export default LatestUpdates
+export default UpdatesPage
 
 export const pageQuery = graphql`
   query AllUpdates {

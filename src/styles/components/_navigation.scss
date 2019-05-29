@@ -8,13 +8,6 @@
     flex-direction: row;
     justify-content: center;
     margin: 0;
-
-    &--collapsed {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 100%;
-    }
   }
 
   &__item {

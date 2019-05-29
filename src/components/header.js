@@ -7,7 +7,7 @@ import NavSocial from './NavSocial'
 const Header = () => {
   return (
     <Spring
-      config={{ duration: 2000 }}
+      items={{ duration: 2000 }}
       from={{ opacity: 0 }}
       to={{ opacity: 1 }}
     >

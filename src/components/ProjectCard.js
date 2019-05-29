@@ -1,7 +1,6 @@
 import React from 'react'
-import CardImage from './CardImage'
 import { Link } from 'gatsby'
-import { Icon } from 'antd'
+import CardImage from './CardImage'
 
 const ProjectCard = ({ project }) => {
   const { title, tags, description, imgName, path } = project.node.frontmatter
@@ -13,17 +12,17 @@ const ProjectCard = ({ project }) => {
           <h4 className="card__title">{title}</h4>
         </div>
       </div>
-      <div className="card__side card__side--back">
-        <h3 className="card__description heading-tertiary">{description}</h3>
-        <div className="card__tags-container">
-          {tags.map(tag => (
-            <p className="card__tags">{tag}</p>
-          ))}
+
+      <Link to={path}>
+        <div className="card__side card__side--back">
+          <h3 className="card__description heading-tertiary">{description}</h3>
+          <div className="card__tags-container">
+            {tags.map(tag => (
+              <p className="card__tags">{tag}</p>
+            ))}
+          </div>
         </div>
-        <Link to={path}>
-          <Icon type="info-circle" />
-        </Link>
-      </div>
+      </Link>
     </div>
   )
 }

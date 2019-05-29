@@ -1,6 +1,6 @@
 ---
 id: '1'
-path: "/cprimelio-gatsby"
+path: "/projects/cprimelio-gatsby"
 date: '2019-05-15T17:12:33.962Z'
 type: "project"
 title: "cprimel.io"

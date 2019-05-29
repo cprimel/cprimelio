@@ -7,12 +7,12 @@ const NavPrimary = () => {
       <nav className="navigation">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link to="/latestupdates" title="link to latest updates">
+            <Link to="/updates" title="link to latest updates">
               Latest
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/portfolio" title="link to portfolio page">
+            <Link to="/projects" title="link to portfolio page">
               Portfolio
             </Link>
           </li>

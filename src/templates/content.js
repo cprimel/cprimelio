@@ -11,9 +11,9 @@ const ProjectTemplate = ({ data }) => {
       <div className="project">
         <Sidebar />
         <div className="project__container">
-          <h1>{project.frontmatter.title}</h1>
+          <h1 className="heading-primary">{project.frontmatter.title}</h1>
           <div
-            className="project__content"
+            className="project__content text-content"
             dangerouslySetInnerHTML={{ __html: project.html }}
           />
         </div>
