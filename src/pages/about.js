@@ -10,13 +10,13 @@ const AboutPage = () => {
     <>
       <Helmet title="cprimel.io | About" />
       <div className="section-about__svg-container">
-        <StreamGraph n={10} m={100} width={1600} height={600} />
+        <StreamGraph n={10} m={100} />
       </div>
       <div className="section-about">
         <Sidebar />
         <div className="section-about__container">
           <div className="section-about__sub-container-1">
-            <div className="user-image">
+            <div className="user-image__container">
               <img
                 src={profileImage}
                 className="user-image"

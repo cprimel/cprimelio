@@ -1,7 +1,9 @@
 import * as d3 from 'd3'
 import bumpLayer from './helpers'
 
-const drawStreamGraph = (n, m, width, height) => {
+const drawStreamGraph = (n, m) => {
+  const height = window.innerHeight
+  const width = window.innerWidth
   d3.select('.stream-graph > *').remove()
 
   const stack = d3

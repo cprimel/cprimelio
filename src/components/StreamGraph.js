@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import drawStreamGraph from './draw-stream-graph'
 
-const StreamGraph = ({ n, m, width, height }) => {
+const StreamGraph = ({ n, m }) => {
   useEffect(() => {
-    drawStreamGraph(n, m, width, height)
+    drawStreamGraph(n, m)
   })
 
   return <div className="stream-graph" />
