@@ -3,11 +3,19 @@ $font-ubuntu: 'Ubuntu', sans-serif;
 $font-opensans: 'Open Sans', sans-serif;
 
 // Color variables
-$color-primary-1: #43e695;
-$color-primary-2: #0cb37e;
-$color-secondary-1:#274b74;
-$color-secondary-2: #86cdff;
+$color-primary-1: rgb(67, 230, 149);
+$color-primary-2: rgb(12, 176, 124);
+$color-secondary-1:rgb(39, 75, 116);
+$color-secondary-2: rgb(134, 205, 255);
 
+
+
+/* Color Theme Swatches in RGBA */
+$neon-nature-1: rgba(114,2,43, 1);
+$neon-nature-2: rgba(13,10,114, 1);
+$neon-nature-3: rgba(31,26,165, 1);
+$neon-nature-4: rgba(29,27,89, 1);
+$neon-nature-5: rgba(17,20,63, 1);
 
 // $color-primary-1: #8ae3ff;
 // $color-primary-2: #457397;
@@ -21,7 +29,7 @@ $color-black: #000;
 $color-white: #fff;
 
 $color-grey-light: #afafaf;
-$color-grey-medium: #4b4b4b;
+$color-grey-medium: rgb(68, 68, 68);
 $color-grey-dark: #282828;
 
 $linkedin-blue: #0077B5;

@@ -1,29 +1,37 @@
 .section-about {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   &__container {
+    float: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
-    position: relative;
-    width: auto;
-    height: 100vh;
-    padding: 10rem 7.5rem 10rem 10rem;
+    position: fixed;
+    top: 30%;
+    width: 90%;
+    height: auto;
+    padding-left: 15rem;
+    margin: 0 auto;
+    
   }
 
-  &__sub-container-1 {
+  &__sub-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    width: 90%;
+    width: 75%;
     height: auto;
-    background-color: rgba($color-white, 0.8);
-    margin: 0 auto;
+    background-color: rgba($color-white, 0.95);
+    box-shadow: 0 1rem 2rem 0 rgba($color-black, .25);
   }
 
   &__text-container > * {
-    padding: 1rem 0;
+    padding: 1rem;
   }
 
   &__svg-container {

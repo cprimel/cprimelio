@@ -1,26 +1,9 @@
-.project {
+.section-contact {
   height: 100%;
   width: auto;
   position: absolute;
   top: 0;
   left: 0;
-
-  & * a {
-    color: $color-secondary-2;
-  }
-
-  & * h2,
-  & * h4 {
-    padding: 2rem 0;
-  }
-
-  & * p {
-    padding-bottom: 1.5rem;
-  }
-
-  & * ol {
-    padding-top: 1rem;
-  }
 
   &__container {
     float: center;
@@ -32,17 +15,23 @@
     position: fixed;
     top: 10%;
     left: 10%;
-    width: 80%;
+    width: auto;
     height: 80%;
-    overflow-y: scroll;
-    overflow-x: hidden;
     margin: 0 auto;
     background-color: rgba($color-white, 0.95);
     box-shadow: 0 1rem 2rem 0 rgba($color-black, .25);
   }
 
-  &__date {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+  &__message {
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    width: 90%;
   }
+  &__form-container {
+    display: flex;
+    flex-direction: row;
+    height:100%;
+    width: auto;
+  }
+
 }

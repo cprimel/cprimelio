@@ -63,12 +63,15 @@ a {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   text-decoration: inherit;
+}
+
+.icon {
 
   &:hover {
     color: $color-hover;
+
   }
 }
-
 
 .icon-list::before {
   color: $color-icon;

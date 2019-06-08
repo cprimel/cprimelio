@@ -1,51 +1,38 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import Sidebar from '../components/Sidebar'
+import PageLayout from '../components/layouts/PageLayout'
 import NavSocial from '../components/NavSocial'
-import StreamGraph from '../components/StreamGraph'
-import profileImage from '../images/profile.jpg'
 
-const AboutPage = () => {
+const AboutPage = ({ location }) => {
   return (
-    <>
-      <Helmet title="cprimel.io | About" />
-      <div className="section-about__svg-container">
-        <StreamGraph n={10} m={100} />
-      </div>
+    <PageLayout location={location}>
       <div className="section-about">
-        <Sidebar />
         <div className="section-about__container">
-          <div className="section-about__sub-container-1">
-            <div className="user-image__container">
-              <img
-                src={profileImage}
-                className="user-image"
-                alt="Casey Primel"
-              />
-            </div>
+          <div className="section-about__sub-container">
             <div className="section-about__text-container">
               <h1 className="section-about__title heading-primary">about me</h1>
               <h2 className="heading-secondary">
-                I&apos;m a full stack developer based in Boston working in
-                JavaScript and Python.
+                Hi. I&apos;m Casey, a full stack developer based in Boston.
               </h2>
               <p className="text-content">
-                Passionate about building simple, intuitive solutions for
-                complex problems across the entire data workflow from data
-                collection and visualization to user interaction and machine
-                learning.
+                I am primarily interested in building scalable, user-centric
+                applications for data-intensive environments whether tools for
+                data visualization or complete data platforms. That being said,
+                I enjoy any chance to tackle complex engineering problems and
+                develop simple, intuitive solutions for them.I work primarily
+                with the JavaScript and Python ecosystems with a smattering of
+                PHP, Java and whatever else is needed to get the job done (e.g.,
+                GraphQL or SQL).
+              </p>
+              <p className="text-content">
+                Feel free to reach out with work oppurtunities, interesting side
+                projects, or just to connect!
               </p>
               <NavSocial />
             </div>
           </div>
-          {/* <div className="section-about__sub-container-2">
-            <div className="section-about__svg-container">
-              <StreamGraph n={10} m={100} width={600} height={600} />
-            </div>
-          </div> */}
         </div>
       </div>
-    </>
+    </PageLayout>
   )
 }
 

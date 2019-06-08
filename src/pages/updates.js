@@ -1,15 +1,12 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
-import Sidebar from '../components/Sidebar'
+import PageLayout from '../components/layouts/PageLayout'
 
-const UpdatesPage = ({ data }) => {
+const UpdatesPage = ({ data, location }) => {
   const { allMarkdownRemark: updates } = data
   return (
-    <>
-      <Helmet title="cprimel.io | Latest" />
+    <PageLayout location={location}>
       <div className="section-updates">
-        <Sidebar />
         <div className="section-updates__container">
           <div className="section-updates__list">
             {updates.edges
@@ -18,7 +15,10 @@ const UpdatesPage = ({ data }) => {
                 return (
                   <div className="section-updates__preview" key={update.id}>
                     <h2 className="section-updates__title heading-secondary">
-                      <Link to={update.frontmatter.path}>
+                      <Link
+                        to={update.frontmatter.path}
+                        state={{ fromHome: false }}
+                      >
                         {update.frontmatter.title}
                       </Link>
                     </h2>
@@ -28,7 +28,11 @@ const UpdatesPage = ({ data }) => {
                     <p className="section-updates__excerpt text-content">
                       {update.excerpt}
                     </p>
-                    <Link className="link-text" to={update.frontmatter.path}>
+                    <Link
+                      className="link-text"
+                      to={update.frontmatter.path}
+                      state={{ fromHome: false }}
+                    >
                       Further reading &rarr;
                     </Link>
                   </div>
@@ -37,7 +41,7 @@ const UpdatesPage = ({ data }) => {
           </div>
         </div>
       </div>
-    </>
+    </PageLayout>
   )
 }
 

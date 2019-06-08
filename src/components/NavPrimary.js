@@ -7,17 +7,29 @@ const NavPrimary = () => {
       <nav className="navigation">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link to="/updates" title="link to latest updates">
+            <Link
+              to="/updates"
+              state={{ fromHome: true }}
+              title="link to latest updates"
+            >
               Latest
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/projects" title="link to portfolio page">
+            <Link
+              to="/projects"
+              state={{ fromHome: true }}
+              title="link to portfolio page"
+            >
               Portfolio
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/about" title="link to about page">
+            <Link
+              to="/about"
+              state={{ fromHome: true }}
+              title="link to about page"
+            >
               About
             </Link>
           </li>

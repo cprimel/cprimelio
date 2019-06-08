@@ -38,13 +38,21 @@ module.exports = {
               maxWidth: 600, //maxWidth in pixels of container used to generate different widths
             },
           },
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_self',
+              rel: 'nofollow',
+            },
+          },
+          'gatsby-remark-emoji',
         ],
       },
     },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
-        useMozJpeg: false,
+        useMozJpeg: true,
         stripMetadata: true,
         defaultQuality: 75,
       },

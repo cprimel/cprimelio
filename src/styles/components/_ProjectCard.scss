@@ -21,7 +21,7 @@
   }
 
   &__tags {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 
   &__tags-container {
@@ -38,10 +38,6 @@
     text-align: center;
   }
 
-  &__image {
-    mix-blend-mode: multiply;
-  }
-
   &__side {
     border-radius: 3px;
     position: absolute;
@@ -50,30 +46,32 @@
     right: 0;
     bottom: 0;
     transition: all 0.8s ease;
+    will-change: transform;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     overflow: hidden;
 
     &--front {
-      background-image: linear-gradient(
-        to right bottom,
-        $color-secondary-1,
-        $color-secondary-2
-      );
-      background-size: cover;
-      background-blend-mode: multiply;
+      background: linear-gradient($color-primary-1 0%, $color-secondary-2 100%);
+
+      & img {
+        mix-blend-mode: multiply;
+      }
     }
 
     &--back {
+      -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
       color: $color-black;
     }
   }
   &:hover &__side--front {
+    -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
   }
 
   &:hover &__side--back {
+    -webkit-transform: rotateY(0);
     transform: rotateY(0);
   }
 }

@@ -1,12 +1,13 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
-import Header from '../components/Header'
+import PageLayout from '../components/layouts/PageLayout'
+import LandingMenu from '../components/LandingMenu'
 
-const LandingPage = () => (
-  <>
-    <Helmet title="cprimel.io | Home" />
-    <Header />
-  </>
-)
+const LandingPage = ({ location }) => {
+  return (
+    <PageLayout location={location}>
+      <LandingMenu />
+    </PageLayout>
+  )
+}
 
 export default LandingPage

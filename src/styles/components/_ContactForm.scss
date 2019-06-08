@@ -1,0 +1,77 @@
+label {
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.form {
+  height: 100%;
+  width: 100%;
+
+  &__item {
+    display: block;
+    padding-top: 5rem;
+    height: auto;
+    width: auto;
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  &__input {
+    position: absolute;
+    top: 20px;
+    font-size: 2rem;
+    width: 30rem;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.3s;
+    background-color: $color-white;
+    border: 3px solid transparent;
+
+    &--message {
+      width: 60rem;
+      height: 20rem;
+      resize: none;
+    }
+
+    & ~ span {
+      transition: top 0.7s ease;
+      position: absolute;
+      top: 3rem;
+      opacity: 0;
+    }
+
+    &:required {
+      box-shadow: none;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid $color-primary-1;
+
+      & ~ span {
+        top: -0.5rem;
+        opacity: 1;
+      }
+
+      &::-webkit-input-placeholder {
+        opacity: 0;
+      }
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid tomato;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 55rem;
+  }
+
+
+}

@@ -1,18 +1,17 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
-import Sidebar from '../components/Sidebar'
+import PageLayout from '../components/layouts/PageLayout'
 import ProjectBoard from '../components/ProjectBoard'
 
-const ProjectsPage = ({ data }) => {
+const ProjectsPage = ({ data, location }) => {
   const { allMarkdownRemark: projects } = data
 
   return (
-    <>
-      <Helmet title="cprimel.io | Portfolio" />
-      <Sidebar />
-      <ProjectBoard projects={projects.edges} />
-    </>
+    <PageLayout location={location}>
+      <div className="section-projects">
+        <ProjectBoard projects={projects.edges} />
+      </div>
+    </PageLayout>
   )
 }
 

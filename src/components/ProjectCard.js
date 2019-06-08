@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
 
-      <Link to={path}>
+      <Link to={path} state={{ fromHome: false }}>
         <div className="card__side card__side--back">
           <h3 className="card__description heading-tertiary">{description}</h3>
           <div className="card__tags-container">

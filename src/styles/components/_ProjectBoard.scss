@@ -1,16 +1,18 @@
 .project-board {
   &__container {
     color: $color-black;
+    background-color: rgba($color-white, .95);
     position: absolute;
     top: 5rem;
-    left: 5rem;
-    height: 100%;
-    width: 100%;
+    left: 10rem;
+    height: 90%;
+    width: 90%;
   }
 
   &__body {
     margin: 0 auto;
-    padding: 2rem 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
     display: flex;
     flex-wrap: wrap;
   }
