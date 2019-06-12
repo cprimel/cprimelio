@@ -8,6 +8,7 @@ const encode = data => {
     .join('&')
 }
 
+// Why a class? useState hook does not (yet) take callback fn as an arg and useEffect would result in unnecessary re-renders.
 class ContactForm extends React.Component {
   constructor(props) {
     super(props)
@@ -95,16 +96,18 @@ class ContactForm extends React.Component {
             </div>
 
             <div className="form__item">
-              <label htmlFor="message" className="form__label">
-                <textarea
-                  className="form__input form__input--message"
-                  name="message"
-                  onChange={this.handleChange}
-                  placeholder="Message"
-                  required
-                />
-                <span>Message</span>
-              </label>
+              <div className="text-area__container">
+                <label htmlFor="message" className="form__label">
+                  <textarea
+                    className="form__input form__input--message"
+                    name="message"
+                    onChange={this.handleChange}
+                    placeholder="Message"
+                    required
+                  />
+                  <span>Message</span>
+                </label>
+              </div>
             </div>
             <br />
             <div className="form__item">

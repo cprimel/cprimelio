@@ -1,5 +1,5 @@
 import React from 'react'
-import { Spring } from 'react-spring/renderprops'
+import { Spring, animated } from 'react-spring/renderprops'
 import HeaderImage from './HeaderImage'
 
 const Header = ({ fromInternal = false }) => {
@@ -10,9 +10,9 @@ const Header = ({ fromInternal = false }) => {
       to={{ opacity: 1 }}
     >
       {props => (
-        <div style={props} className="image-wrapper">
+        <animated.div style={props} className="image-wrapper">
           <HeaderImage />
-        </div>
+        </animated.div>
       )}
     </Spring>
   )

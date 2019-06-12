@@ -6,7 +6,7 @@ const HeaderImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "sky-palms-la_cropped.jpg" }) {
+        file(relativePath: { eq: "sky-palms-la_cropped3.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1200, quality: 100) {
               ...GatsbyImageSharpFluid

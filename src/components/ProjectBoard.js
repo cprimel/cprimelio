@@ -1,22 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Filter from './Filter'
 import ProjectCard from './ProjectCard'
 
 const ProjectBoard = ({ projects }) => {
+  const [visibleProjects, setVisibleProjects] = useState(projects)
   return (
     <>
-      <Filter />
       <div className="project-board__container">
+        <Filter projects={projects} setVisibleProjects={setVisibleProjects} />
         <div className="project-board__body">
-          {projects.map((project, active, toggle) => (
-            <div className="card__container">
-              <ProjectCard
-                key={project.id}
-                project={project}
-                active={active}
-                toggle={toggle}
-              />
-            </div>
+          {visibleProjects.map((project, active, toggle) => (
+            <ProjectCard
+              key={project.node.frontmatter.id}
+              project={project}
+              active={active}
+              toggle={toggle}
+            />
           ))}
         </div>
       </div>

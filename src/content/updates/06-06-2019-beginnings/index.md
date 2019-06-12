@@ -1,5 +1,5 @@
 ---
-id: 'project-1'
+id: 'update-1'
 path: "/updates/beginnings"
 date: '2019-06-07'
 type: "update"

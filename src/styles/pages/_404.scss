@@ -1,0 +1,12 @@
+.page-404 {
+  @include sectionWrapper;
+}
+
+.page-404__container {
+  @include absCenter;
+  @include sectionContainer;
+}
+
+.page-404__text {
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+.image-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background: linear-gradient($color-primary-1 0%, $color-secondary-2 100%);
+  margin: auto;
+
+  & .image {
+    position: absolute;
+    object-fit: auto;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+    z-index: -2;
+    margin: auto;
+    overflow: auto;
+  }
+}
