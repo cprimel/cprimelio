@@ -14,7 +14,7 @@ imgName: 'amortization-chart.png'
 description: 'Tool to generate and visualize amortization schedules and compare different loan repayment strategies based on user-provided data'
 ---
 
-**Note:** This card is here mostly to demonstrate the filters function on [the projects page](https://cprimel.io/projects). I will be updating this page with the full project soon.
+**Note:** This card is here mostly to demonstrate the filters function on [the projects page](/projects). I will be updating this page with the full project soon.
 
 **Table of Contents:**
 - [Introduction](#introduction)
