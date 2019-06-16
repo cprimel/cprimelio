@@ -9,7 +9,10 @@ const ContactPage = ({ location }) => {
         <div className="section-contact__container">
           <h1 className="heading-primary">contact me</h1>
           <p className="section-contact__message">
-            For any inquiries, feel free to contact me using the form below.
+            Are you looking for a full stack developer? Maybe you need a hand
+            with an interesting project? Perhaps, you are interested in some of
+            the projects on this website? Or, you just want to introduce
+            yourself? Feel free to contact me using the form below.
             Alternatively, you can shoot me an email at&nbsp;
             <a href="mailto:casey.primel@gmail.com">casey.primel@gmail.com.</a>
           </p>

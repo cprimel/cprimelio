@@ -7,6 +7,14 @@
   width: 100%;
   padding: 0.5rem 0.5rem;
 
+  @include respond(phone) {
+    padding-left: 6rem;
+  }
+  @include respond(phone-land) {
+    padding-left: 6rem;
+  }
+
+
   &__text {
     display: inline-block;
     color: $color-black;
@@ -24,6 +32,11 @@
     border-radius: 5px;
     appearance: none;
     background-color: $color-white;
+    @include respond(phone) {
+      display: block;
+      text-align: center;
+    }
+
   }
 
   &__select option {

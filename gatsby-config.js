@@ -35,17 +35,18 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 600, //maxWidth in pixels of container used to generate different widths
+              maxWidth: 1400, // maxWidth in pixels of container
             },
           },
           {
             resolve: 'gatsby-remark-external-links',
             options: {
-              target: '_self',
+              target: '_blank',
               rel: 'nofollow',
             },
           },
           'gatsby-remark-emoji',
+          'gatsby-remark-autolink-headers',
         ],
       },
     },

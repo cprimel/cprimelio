@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import PageLayout from '../components/layouts/PageLayout'
 import NavSocial from '../components/NavSocial'
 
@@ -13,18 +14,21 @@ const AboutPage = ({ location }) => {
               Hi. I&apos;m Casey, a full stack developer based in Boston.
             </h2>
             <p className="text-content">
-              I am primarily interested in building scalable, user-centric
-              applications for data-intensive environments whether tools for
-              data visualization or complete data platforms. That being said, I
-              enjoy any chance to tackle complex engineering problems and
-              develop simple, intuitive solutions for them.I work primarily with
-              the JavaScript and Python ecosystems with a smattering of PHP,
-              Java and whatever else is needed to get the job done (e.g.,
-              GraphQL or SQL).
+              I am interested in building scalable, user-centric applications
+              for data-intensive environments whether tools for data
+              visualization or complete data platforms. I enjoy any chance to
+              tackle complex engineering problems and develop simple, intuitive
+              solutions for them. I work primarily with the JavaScript and
+              Python ecosystems but am also handy with Java, PHP, SQL and
+              GraphQL. That being said, I am always game for expanding my
+              toolkit with new langauges and frameworks and value the insights
+              garnered from working outside my comfort zone.
             </p>
             <p className="text-content">
-              Feel free to reach out with work oppurtunities, interesting side
-              projects, or just to connect!
+              Feel free to&nbsp;
+              <Link to="/contact">reach out</Link>
+              &nbsp;with work opportunities, interesting side projects, or just
+              to connect!
             </p>
             <NavSocial />
           </div>

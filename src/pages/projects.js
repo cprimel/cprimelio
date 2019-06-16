@@ -5,7 +5,6 @@ import ProjectBoard from '../components/ProjectBoard'
 
 const ProjectsPage = ({ data, location }) => {
   const { allMarkdownRemark: projects } = data
-
   return (
     <PageLayout location={location}>
       <div className="section-projects">

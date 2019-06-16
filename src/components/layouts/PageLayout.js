@@ -18,7 +18,7 @@ const PageLayout = ({ children, location }) => {
     springFrom = { transform: 'translate3d(0, 0%, 0)' }
     springTo = { transform: 'translate3d(0, 0%, 0)' }
   } else if (isContent) {
-    springFrom = { transform: 'scale(0.8)' }
+    springFrom = { transform: 'scale(0.2)' }
     springTo = { transform: 'scale(1)' }
   } else {
     springFrom = { transform: 'translate3d(100%, 0, 0)' }

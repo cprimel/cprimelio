@@ -12,10 +12,20 @@ label {
     padding-top: 5rem;
     height: auto;
     width: auto;
+    @include respond(sm-phone) {
+      padding-left: .5rem;
+    }
 
     & > .text-area__container {
       width: 60rem;
       height: 25rem;
+
+      @include respond(phone) {
+        width: 30rem;
+      }
+      @include respond(phone-land) {
+        width: 50rem;
+      }
     }
   }
 
@@ -34,12 +44,18 @@ label {
     border: none;
     transition: all 0.3s;
     background-color: $color-white;
-    border: 3px solid transparent;
+    border: 1px solid $color-black;
+    @include respond(sm-phone) {
+      width: 25rem;
+    }
 
     &--message {
       width: 100%;
       height: 20rem;
       resize: none;
+      @include respond(sm-phone) {
+        width: 25rem;
+      }
     }
 
     & ~ span {
@@ -47,6 +63,7 @@ label {
       position: absolute;
       top: 3rem;
       opacity: 0;
+      color: $color-grey-light;
     }
 
     &:required {
@@ -59,6 +76,7 @@ label {
       border-bottom: 3px solid $color-primary-1;
 
       & ~ span {
+        color: $color-black;
         top: -0.5rem;
         opacity: 1;
       }
@@ -76,5 +94,8 @@ label {
   &__btn {
     position: absolute;
     top: 55rem;
+    @include respond(phone) {
+      top: 60rem;
+    }
   }
 }

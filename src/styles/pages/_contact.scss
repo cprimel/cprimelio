@@ -4,7 +4,27 @@
   &__container {
     @include absCenter;
     @include sectionContainer;
+    height: auto;
+
+    @include respond(phone) {
+      max-height: 100%;
+      height: 100%;
+      width: 100%;
+      padding-left: 6rem;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    @include respond(phone-land) {
+      max-height: 100%;
+      height: 100%;
+      width: 100%;
+      padding-left: 6rem;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
   }
+
 
   &__message {
     font-size: 1.6rem;

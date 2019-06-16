@@ -1,4 +1,5 @@
 import React from 'react'
+import FilterOptions from './FilterOptions'
 
 const Filter = ({ projects, setVisibleProjects }) => {
   const handleChange = e => {
@@ -21,10 +22,7 @@ const Filter = ({ projects, setVisibleProjects }) => {
             Filter projects by language, framework or library:
           </span>
           <select className="filter__select" onChange={handleChange}>
-            <option value="all">&nbsp;All&nbsp;</option>
-            <option value="Python">&nbsp;Python</option>
-            <option value="JavaScript">&nbsp;JavaScript&nbsp;</option>
-            <option value="React">&nbsp;React&nbsp;</option>
+            <FilterOptions projects={projects} />
           </select>
         </form>
       </div>

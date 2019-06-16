@@ -2,7 +2,7 @@
   @include sectionWrapper;
 
   & * a {
-    color: $color-secondary-2;
+    color: $color-primary-2;
   }
 
   & * h2,
@@ -17,6 +17,14 @@
   & * ol {
     padding-top: 1rem;
   }
+  & * ul {
+    padding-left: 2rem;
+  }
+
+  // Code blocks in markdown were being computed to 13px rather than 16px. The following attribute normalizes the font-size.
+  & * code {
+    font-size: 1.96923rem;
+  }
 
   &__container {
     @include absCenter;
@@ -24,10 +32,28 @@
     overflow-y: scroll;
     overflow-x: hidden;
 
+    @include respond(phone) {
+      max-height: 100%;
+      height: 100%;
+      width: 100%;
+      padding-left: 6rem;
+    }
+
+    @include respond(phone-land) {
+      max-height: 100%;
+      height: 100%;
+      width: 100%;
+      padding-left: 6rem;
+    }
   }
 
   &__date {
-    padding-top: 1rem;
+    font-style: italic;
     padding-bottom: 2rem;
+    padding-left: 1rem;
   }
+}
+
+.footnotes {
+  padding-left: 2rem;
 }

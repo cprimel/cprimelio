@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     height: 100%;
   }
 
@@ -71,4 +71,8 @@
   transition: 0.2s ease;
   backface-visibility: hidden;
   margin: 3rem 0;
+
+  @include respond(phone-land) {
+    margin: 1.5rem 0;
+  }
 }

@@ -30,17 +30,18 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  height: auto;
+  height: 90%;
   width: 75%;
   padding: 1rem 2rem;
   margin: auto;
-  background-color: rgba($color-white, 0.95);
+  background-color: $color-white;
   box-shadow: 0 1rem 2rem 0 rgba($color-black, 0.25);
 }
 
 // Media query managers
 
 /*
+Width:
 0 - 360px: small phone
 360 - 600px: phone
 600px - 900px: tablet portrait
@@ -48,9 +49,14 @@
 1200px - 1800px: default
 1800px +: big desktop
 
+Height:
+0-650px: phone (landscape mode)
+650px +: default
+
 $breakpoint arg choices:
 - sm-phone
 - phone
+- phone-land
 - tab-port
 - tab-land
 - big
@@ -69,6 +75,12 @@ $breakpoint arg choices:
       @content;
     }
   }
+  @if $breakpoint == phone-land {
+    @media(max-height: 40.625em){
+      @content;
+    }
+  }
+
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) {
       @content;

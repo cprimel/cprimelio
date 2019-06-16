@@ -26,7 +26,8 @@ class ContactForm extends React.Component {
   }
 
   handleValidation = () => {
-    if (isEmail(this.state.email) && this.state.name && this.state.message) {
+    const { name, email, message } = this.state
+    if (isEmail(email) && name && message) {
       this.setState({ formIsValid: true })
     } else {
       this.setState({ formIsValid: false })
@@ -51,6 +52,7 @@ class ContactForm extends React.Component {
   }
 
   render() {
+    const { formIsValid } = this.state
     return (
       <>
         <form
@@ -72,11 +74,11 @@ class ContactForm extends React.Component {
                   className="form__input"
                   type="text"
                   name="name"
-                  placeholder="Name"
+                  placeholder="&nbsp;Name"
                   onChange={this.handleChange}
                   required
                 />
-                <span>Name</span>
+                <span>&nbsp;Name</span>
               </label>
               <br />
             </div>
@@ -86,11 +88,11 @@ class ContactForm extends React.Component {
                   className="form__input"
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder="&nbsp;Email"
                   onChange={this.handleChange}
                   required
                 />
-                <span>Email</span>
+                <span>&nbsp;Email</span>
               </label>
               <br />
             </div>
@@ -102,10 +104,10 @@ class ContactForm extends React.Component {
                     className="form__input form__input--message"
                     name="message"
                     onChange={this.handleChange}
-                    placeholder="Message"
+                    placeholder="&nbsp;Message"
                     required
                   />
-                  <span>Message</span>
+                  <span>&nbsp;Message</span>
                 </label>
               </div>
             </div>
@@ -115,7 +117,7 @@ class ContactForm extends React.Component {
                 className="btn form__btn"
                 type="submit"
                 value="Send"
-                disabled={!this.state.formIsValid}
+                disabled={!formIsValid}
               />
             </div>
           </div>

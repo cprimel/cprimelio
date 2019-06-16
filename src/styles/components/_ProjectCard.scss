@@ -56,13 +56,14 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     overflow: hidden;
 
-    &--front {
-      background: linear-gradient($color-primary-1 0%, $color-secondary-2 100%);
+    // TODO: Apply gradient and multiply to --front with appropriate id selector
+    // &--front {
+    //   background: linear-gradient($color-primary-1 0%, $color-secondary-2 100%);
 
-      & img {
-        mix-blend-mode: multiply;
-      }
-    }
+    //   & img {
+    //     mix-blend-mode: multiply;
+    //   }
+    // }
 
     &--back {
       -webkit-transform: rotateY(180deg);
