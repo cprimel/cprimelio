@@ -21,7 +21,7 @@ const AboutPage = ({ location }) => {
               solutions for them. I work primarily with the JavaScript and
               Python ecosystems but am also handy with Java, PHP, SQL and
               GraphQL. That being said, I am always game for expanding my
-              toolkit with new langauges and frameworks and value the insights
+              toolkit with new languages and frameworks and value the insights
               garnered from working outside my comfort zone.
             </p>
             <p className="text-content">
