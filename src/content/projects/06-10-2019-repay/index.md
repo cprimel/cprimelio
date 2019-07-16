@@ -8,7 +8,6 @@ tags: [
   'JavaScript',
   'React.js',
   'GraphQL',
-  'Apollo Client',
   'Python',
   'Django',
   ]
